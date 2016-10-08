@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		450D9B3DAA7DE80B452FE671 /* Pods_SocialNetworkDevSlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC64AD1DCC3FB805AFE0107 /* Pods_SocialNetworkDevSlo.framework */; };
 		CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */; };
-		CF4F3F151DA8E35B001A4123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F3F141DA8E35B001A4123 /* ViewController.swift */; };
+		CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F3F141DA8E35B001A4123 /* SignInVC.swift */; };
 		CF4F3F181DA8E35B001A4123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F161DA8E35B001A4123 /* Main.storyboard */; };
 		CF4F3F1A1DA8E35B001A4123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F191DA8E35B001A4123 /* Assets.xcassets */; };
 		CF4F3F1D1DA8E35B001A4123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F1B1DA8E35B001A4123 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		CBC64AD1DCC3FB805AFE0107 /* Pods_SocialNetworkDevSlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkDevSlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F3F0F1DA8E35B001A4123 /* SocialNetworkDevSlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworkDevSlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF4F3F141DA8E35B001A4123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF4F3F141DA8E35B001A4123 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		CF4F3F171DA8E35B001A4123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF4F3F191DA8E35B001A4123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4F3F1C1DA8E35B001A4123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,15 +80,47 @@
 		CF4F3F111DA8E35B001A4123 /* SocialNetworkDevSlo */ = {
 			isa = PBXGroup;
 			children = (
-				CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */,
-				CF4F3F141DA8E35B001A4123 /* ViewController.swift */,
+				CFB085501DA8F10400539A44 /* Model */,
+				CFB085511DA8F10900539A44 /* View */,
+				CFB085521DA8F11300539A44 /* Controller */,
+				CFB085531DA8F12500539A44 /* Resources */,
+			);
+			path = SocialNetworkDevSlo;
+			sourceTree = "<group>";
+		};
+		CFB085501DA8F10400539A44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CFB085511DA8F10900539A44 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				CF4F3F161DA8E35B001A4123 /* Main.storyboard */,
-				CF4F3F191DA8E35B001A4123 /* Assets.xcassets */,
 				CF4F3F1B1DA8E35B001A4123 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CFB085521DA8F11300539A44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */,
+				CF4F3F141DA8E35B001A4123 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CFB085531DA8F12500539A44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF4F3F191DA8E35B001A4123 /* Assets.xcassets */,
 				CF4F3F1E1DA8E35B001A4123 /* Info.plist */,
 				CFB0854E1DA8EC6600539A44 /* GoogleService-Info.plist */,
 			);
-			path = SocialNetworkDevSlo;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4F3F151DA8E35B001A4123 /* ViewController.swift in Sources */,
+				CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */,
 				CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
