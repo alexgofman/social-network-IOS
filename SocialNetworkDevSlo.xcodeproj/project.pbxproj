@@ -12,6 +12,7 @@
 		CF4F3F181DA8E35B001A4123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F161DA8E35B001A4123 /* Main.storyboard */; };
 		CF4F3F1A1DA8E35B001A4123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F191DA8E35B001A4123 /* Assets.xcassets */; };
 		CF4F3F1D1DA8E35B001A4123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F1B1DA8E35B001A4123 /* LaunchScreen.storyboard */; };
+		CF4F3F251DA8E54D001A4123 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F241DA8E54D001A4123 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CF4F3F191DA8E35B001A4123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4F3F1C1DA8E35B001A4123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4F3F1E1DA8E35B001A4123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4F3F241DA8E54D001A4123 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CF4F3F191DA8E35B001A4123 /* Assets.xcassets */,
 				CF4F3F1B1DA8E35B001A4123 /* LaunchScreen.storyboard */,
 				CF4F3F1E1DA8E35B001A4123 /* Info.plist */,
+				CF4F3F241DA8E54D001A4123 /* GoogleService-Info.plist */,
 			);
 			path = SocialNetworkDevSlo;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 				CF4F3F1D1DA8E35B001A4123 /* LaunchScreen.storyboard in Resources */,
 				CF4F3F1A1DA8E35B001A4123 /* Assets.xcassets in Resources */,
 				CF4F3F181DA8E35B001A4123 /* Main.storyboard in Resources */,
+				CF4F3F251DA8E54D001A4123 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
