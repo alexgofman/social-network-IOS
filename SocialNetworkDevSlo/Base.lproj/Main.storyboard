@@ -93,6 +93,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpq-1J-X0r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
