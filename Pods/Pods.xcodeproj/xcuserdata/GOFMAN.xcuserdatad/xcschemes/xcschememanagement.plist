@@ -4,7 +4,27 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SocialNetworkDevSlo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftKeychainWrapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>15A5776EAE9E93595E7BB0B878CE2384</key>
+		<key>14D79A5085C6E3036DA7ACD97DD354DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E303C3CE7513908EE880D9CA833AFAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BF3E9F7760067D3EB930CE32735615D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6EDC37F3FA92533C6AC3562458AA91F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D0F2E5EA1B46A5D72FFD42B0B39DBBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
