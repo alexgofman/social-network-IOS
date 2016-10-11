@@ -19,6 +19,7 @@
 		CFB0855A1DA9082000539A44 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB085591DA9082000539A44 /* RoundBtn.swift */; };
 		CFB0855C1DA909DA00539A44 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0855B1DA909DA00539A44 /* FancyField.swift */; };
 		CFB0855E1DA90B3400539A44 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0855D1DA90B3400539A44 /* FancyBtn.swift */; };
+		CFE45CA01DACFB8E003F2CD1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		CFB085591DA9082000539A44 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		CFB0855B1DA909DA00539A44 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		CFB0855D1DA90B3400539A44 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		E133C26069563A8FD64D63DB /* Pods-SocialNetworkDevSlo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkDevSlo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworkDevSlo/Pods-SocialNetworkDevSlo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 			children = (
 				CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */,
 				CF4F3F141DA8E35B001A4123 /* SignInVC.swift */,
+				CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */,
 				CFB0855A1DA9082000539A44 /* RoundBtn.swift in Sources */,
 				CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */,
+				CFE45CA01DACFB8E003F2CD1 /* FeedVC.swift in Sources */,
 				CFB085551DA9047300539A44 /* FancyView.swift in Sources */,
 				CFB085581DA9058400539A44 /* Constants.swift in Sources */,
 				CFB0855E1DA90B3400539A44 /* FancyBtn.swift in Sources */,

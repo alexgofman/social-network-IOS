@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -19,13 +20,17 @@ class SignInVC: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		
+		
+		
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+			performSegue(withIdentifier: "goToFeed", sender: nil)
+		}
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
 
 	@IBAction func facebookBtnTapped(_ sender: AnyObject) {
 		let facebookLogin = FBSDKLoginManager()
@@ -48,6 +53,9 @@ class SignInVC: UIViewController {
 				print("ALEX: Unable to auth with Firebase - \(error)")
 			} else {
 				print("ALEX: Successfully authenticated with Firebase")
+				if let user = user {
+					self.completeSignIn(id: user.uid)
+				}
 			}
 		})
 	}
@@ -62,13 +70,25 @@ class SignInVC: UIViewController {
 							print("ALEX: Unable to auth with Firebase using email")
 						} else {
 							print("Successfully created user auth with Firebase")
+							if let user = user {
+								self.completeSignIn(id: user.uid)
+							}
 						}
 					})
 				} else {
 					print("ALEX: User email authenticated with Firebase")
+					if let user = user {
+						self.completeSignIn(id: user.uid)
+					}
 				}
 			})
 		}
+	}
+	
+	func completeSignIn(id: String) {
+		let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+		print("ALEX: Data saved to keychain - \(keychainResult)")
+		performSegue(withIdentifier: "goToFeed", sender: nil)
 	}
 	
 	

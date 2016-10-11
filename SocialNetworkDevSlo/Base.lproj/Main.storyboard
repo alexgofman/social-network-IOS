@@ -125,11 +125,30 @@
                     <connections>
                         <outlet property="emailField" destination="nyk-b3-EDa" id="aua-pF-hdi"/>
                         <outlet property="passwordField" destination="HuF-Ff-nQB" id="jkg-Qh-8jJ"/>
+                        <segue destination="WXX-zf-M6Q" kind="show" identifier="goToFeed" id="1OW-CK-Mma"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="OeD-cj-V6A">
+            <objects>
+                <viewController id="WXX-zf-M6Q" customClass="FeedVC" customModule="SocialNetworkDevSlo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qbD-T4-EC4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cs1-Ar-zqM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uC6-Ae-UFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94936763930000001" green="1" blue="0.59587098810000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t5a-Gk-DH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="38"/>
         </scene>
     </scenes>
     <resources>
