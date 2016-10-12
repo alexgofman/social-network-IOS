@@ -22,6 +22,7 @@
 		CFE45CA01DACFB8E003F2CD1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */; };
 		CFE45CA21DAD1C71003F2CD1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45CA11DAD1C71003F2CD1 /* CircleView.swift */; };
 		CFE45CA41DAD250F003F2CD1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45CA31DAD250F003F2CD1 /* PostCell.swift */; };
+		CFE45CA71DADFD84003F2CD1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45CA61DADFD84003F2CD1 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CFE45CA11DAD1C71003F2CD1 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		CFE45CA31DAD250F003F2CD1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CFE45CA61DADFD84003F2CD1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E133C26069563A8FD64D63DB /* Pods-SocialNetworkDevSlo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkDevSlo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworkDevSlo/Pods-SocialNetworkDevSlo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		CF4F3F111DA8E35B001A4123 /* SocialNetworkDevSlo */ = {
 			isa = PBXGroup;
 			children = (
+				CFE45CA51DADFD6B003F2CD1 /* Services */,
 				CF65D3E21DAA2B8700309879 /* SocialNetworkDevSlo.entitlements */,
 				CFB085501DA8F10400539A44 /* Model */,
 				CFB085511DA8F10900539A44 /* View */,
@@ -155,6 +158,14 @@
 				CFB085571DA9058400539A44 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		CFE45CA51DADFD6B003F2CD1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CFE45CA61DADFD84003F2CD1 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */,
 				CFB0855A1DA9082000539A44 /* RoundBtn.swift in Sources */,
 				CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */,
+				CFE45CA71DADFD84003F2CD1 /* DataService.swift in Sources */,
 				CFE45CA01DACFB8E003F2CD1 /* FeedVC.swift in Sources */,
 				CFB085551DA9047300539A44 /* FancyView.swift in Sources */,
 				CFB085581DA9058400539A44 /* Constants.swift in Sources */,

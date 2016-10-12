@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
+import Firebase
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,6 +34,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 		return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
 	}
 	
+	
+	@IBAction func signOutTapped(_ sender: AnyObject) {
+		let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+		print("ALEX: Keychain ID removed - \(keychainResult)")
+		try! FIRAuth.auth()?.signOut()
+		self.dismiss(animated: true, completion: nil)
+	}
 
 
 }
