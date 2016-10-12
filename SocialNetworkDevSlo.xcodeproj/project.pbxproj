@@ -21,6 +21,7 @@
 		CFB0855E1DA90B3400539A44 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0855D1DA90B3400539A44 /* FancyBtn.swift */; };
 		CFE45CA01DACFB8E003F2CD1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */; };
 		CFE45CA21DAD1C71003F2CD1 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45CA11DAD1C71003F2CD1 /* CircleView.swift */; };
+		CFE45CA41DAD250F003F2CD1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE45CA31DAD250F003F2CD1 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		CFB0855D1DA90B3400539A44 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		CFE45C9F1DACFB8E003F2CD1 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		CFE45CA11DAD1C71003F2CD1 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CFE45CA31DAD250F003F2CD1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E133C26069563A8FD64D63DB /* Pods-SocialNetworkDevSlo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkDevSlo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworkDevSlo/Pods-SocialNetworkDevSlo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				CFB0855B1DA909DA00539A44 /* FancyField.swift */,
 				CFB0855D1DA90B3400539A44 /* FancyBtn.swift */,
 				CFE45CA11DAD1C71003F2CD1 /* CircleView.swift */,
+				CFE45CA31DAD250F003F2CD1 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				CFB085551DA9047300539A44 /* FancyView.swift in Sources */,
 				CFB085581DA9058400539A44 /* Constants.swift in Sources */,
 				CFB0855E1DA90B3400539A44 /* FancyBtn.swift in Sources */,
+				CFE45CA41DAD250F003F2CD1 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
