@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		450D9B3DAA7DE80B452FE671 /* Pods_SocialNetworkDevSlo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC64AD1DCC3FB805AFE0107 /* Pods_SocialNetworkDevSlo.framework */; };
+		CF3ABEC01DAEA11B00B39757 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3ABEBF1DAEA11B00B39757 /* Post.swift */; };
 		CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */; };
 		CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4F3F141DA8E35B001A4123 /* SignInVC.swift */; };
 		CF4F3F181DA8E35B001A4123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4F3F161DA8E35B001A4123 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		401D915D0F79AE73E0A30FEF /* Pods-SocialNetworkDevSlo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworkDevSlo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworkDevSlo/Pods-SocialNetworkDevSlo.release.xcconfig"; sourceTree = "<group>"; };
 		CBC64AD1DCC3FB805AFE0107 /* Pods_SocialNetworkDevSlo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworkDevSlo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3ABEBF1DAEA11B00B39757 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CF4F3F0F1DA8E35B001A4123 /* SocialNetworkDevSlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworkDevSlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4F3F121DA8E35B001A4123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4F3F141DA8E35B001A4123 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		CFB085501DA8F10400539A44 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF3ABEBF1DAEA11B00B39757 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				CFE45CA21DAD1C71003F2CD1 /* CircleView.swift in Sources */,
 				CFB0855C1DA909DA00539A44 /* FancyField.swift in Sources */,
 				CF4F3F151DA8E35B001A4123 /* SignInVC.swift in Sources */,
+				CF3ABEC01DAEA11B00B39757 /* Post.swift in Sources */,
 				CFB0855A1DA9082000539A44 /* RoundBtn.swift in Sources */,
 				CF4F3F131DA8E35B001A4123 /* AppDelegate.swift in Sources */,
 				CFE45CA71DADFD84003F2CD1 /* DataService.swift in Sources */,
