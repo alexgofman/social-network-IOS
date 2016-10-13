@@ -10,10 +10,12 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 	@IBOutlet weak var tableView: UITableView!
+	@IBOutlet weak var imageAdd: CircleView!
 	
+	var imagePicker: UIImagePickerController!
 	var posts = [Post]()
 	
 	override func viewDidLoad() {
@@ -21,6 +23,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 		
 		tableView.delegate = self
 		tableView.dataSource = self
+		
+		
+		imagePicker = UIImagePickerController()
+		imagePicker.delegate = self
+		imagePicker.allowsEditing = true
 		
 		DataService.ds.REF_POSTS.observe(.value, with: { (snapshot) in
 			if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
@@ -36,6 +43,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 			self.tableView.reloadData()
 		})
 		
+	}
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+		if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+			imageAdd.image = image
+		} else {
+			print("ALEX: a valid image wasn't selected")
+		}
+		imagePicker.dismiss(animated: true, completion: nil)
 	}
 	
 	func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,6 +78,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 		print("ALEX: Keychain ID removed - \(keychainResult)")
 		try! FIRAuth.auth()?.signOut()
 		self.dismiss(animated: true, completion: nil)
+	}
+	
+	
+	@IBAction func addImageTapped(_ sender: AnyObject) {
+		present(imagePicker, animated: true, completion: nil)
 	}
 
 
