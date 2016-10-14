@@ -176,7 +176,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mgx-Qf-N9I">
                                         <subviews>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="3QI-8d-39H" customClass="CircleView" customModule="SocialNetworkDevSlo" customModuleProvider="target">
-                                                <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.61750741324216651" green="0.79922391299938922" blue="0.86432951688766479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="jIQ-ZD-rwh"/>
@@ -198,6 +198,9 @@
                                                     <constraint firstAttribute="height" constant="49" id="x0U-ok-r9t"/>
                                                 </constraints>
                                                 <state key="normal" image="add-post"/>
+                                                <connections>
+                                                    <action selector="postBtnTapped:" destination="WXX-zf-M6Q" eventType="touchUpInside" id="mSM-Dp-2be"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -318,6 +321,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="L3j-Cj-Y4W" id="72H-cD-TeQ"/>
                         <outlet property="imageAdd" destination="3QI-8d-39H" id="Ggr-az-hau"/>
                         <outlet property="tableView" destination="3PM-kl-fVW" id="6pF-7F-FXe"/>
                     </connections>
